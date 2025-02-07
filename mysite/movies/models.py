@@ -15,3 +15,4 @@ class MoviesData(models.Model):
     duration = models.FloatField()
     rating = models.FloatField()
     category = models.CharField(max_length=200, default='movies')
+    image = models.ImageField(upload_to='media', default='images/movvies/noimg.jpg')
