@@ -5,4 +5,4 @@ class MoviesSerializer(serializers.ModelSerializer):
     image = serializers.ImageField(max_length=None, use_url=True)
     class Meta:
         model = MoviesData
-        fields = ['id', 'name', 'duration', 'rating', 'category']
+        fields = ['id', 'name', 'duration', 'rating', 'category', 'image']
