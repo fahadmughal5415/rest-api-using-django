@@ -17,7 +17,9 @@ This project is a simple REST API built using Django and Django REST Framework. 
 ## Installation
 
 1. Clone the repository:
+
 git clone https://github.com/fahadmughal5415/rest-api-using-django
+
 cd rest-api-using-django
 
 2. Set up a virtual environment:
