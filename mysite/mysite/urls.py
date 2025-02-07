@@ -20,10 +20,10 @@ from rest_framework import routers
 from movies.views import MoviesViewSet, ActionViewSet, ComedyViewSet, HorrorViewSet
 
 router = routers.SimpleRouter()
-router.register('movies', MoviesViewSet)
-router.register('action', ActionViewSet)
-router.register('horror', HorrorViewSet)
-router.register('comedy', ComedyViewSet)
+router.register('movies', MoviesViewSet, basename='movies')
+router.register('action', ActionViewSet, basename='action-movies')
+router.register('horror', HorrorViewSet, basename='horror-movies')
+router.register('comedy', ComedyViewSet, basename='comedy-movies')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
