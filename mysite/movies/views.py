@@ -8,3 +8,15 @@ from .models import MoviesData
 class MoviesViewSet(viewsets.ModelViewSet):
     queryset = MoviesData.objects.all()
     serializer_class = MoviesSerializer
+
+class ActionViewSet(viewsets.ModelViewSet):
+    queryset = MoviesData.objects.filter(category='action')
+    serializer_class = MoviesSerializer
+
+class ComedyViewSet(viewsets.ModelViewSet):
+    queryset = MoviesData.objects.filter(category='comedy')
+    serializer_class = MoviesSerializer
+
+class HorrorViewSet(viewsets.ModelViewSet):
+    queryset = MoviesData.objects.filter(category='horror')
+    serializer_class = MoviesSerializer

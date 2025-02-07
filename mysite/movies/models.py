@@ -14,3 +14,4 @@ class MoviesData(models.Model):
     name = models.CharField(max_length=200)
     duration = models.FloatField()
     rating = models.FloatField()
+    category = models.CharField(max_length=200)
