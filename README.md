@@ -18,22 +18,22 @@ This project is a simple REST API built using Django and Django REST Framework. 
 
 1. Clone the repository:
 
-git clone https://github.com/fahadmughal5415/rest-api-using-django
+- git clone https://github.com/fahadmughal5415/rest-api-using-django.
 
-cd rest-api-using-django
+- cd rest-api-using-django
 
 2. Set up a virtual environment:
-python -m venv .venv source .venv/bin/activate # For macOS/Linux.
-venv\Scripts\activate # For Windows
+- python -m venv .venv source .venv/bin/activate # For macOS/Linux.
+- venv\Scripts\activate # For Windows
 
 3. Install the required dependencies:
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4. Apply the migrations:
-python manage.py migrate
+- python manage.py migrate
 
 5. Run the development server:
-python manage.py runserver
+- python manage.py runserver
 
 
 ## API Endpoints
